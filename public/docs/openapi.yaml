@@ -7,25 +7,152 @@ servers:
   -
     url: 'http://localhost:8000'
 paths:
-  /api/user:
+  /:
     get:
       summary: ''
-      operationId: getApiUser
+      operationId: get
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  Laravel: 11.14.0
                 properties:
-                  message:
+                  Laravel:
                     type: string
-                    example: Unauthenticated.
+                    example: 11.14.0
+      tags:
+        - Endpoints
+      security: []
+  /register:
+    post:
+      summary: 'Handle an incoming registration request.'
+      operationId: handleAnIncomingRegistrationRequest
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: wukjs
+                email:
+                  type: string
+                  description: 'Must be a valid email address. Must not be greater than 255 characters.'
+                  example: jankunding@example.org
+                password:
+                  type: string
+                  description: ''
+                  example: nemo
+              required:
+                - name
+                - email
+                - password
+      security: []
+  /login:
+    post:
+      summary: 'Handle an incoming authentication request.'
+      operationId: handleAnIncomingAuthenticationRequest
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: parisian.roselyn@example.org
+                password:
+                  type: string
+                  description: ''
+                  example: 'V|,/BzhYuj#cz(M>YJt'
+              required:
+                - email
+                - password
+      security: []
+  /forgot-password:
+    post:
+      summary: 'Handle an incoming password reset link request.'
+      operationId: handleAnIncomingPasswordResetLinkRequest
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: sanford.otho@example.com
+              required:
+                - email
+      security: []
+  /reset-password:
+    post:
+      summary: 'Handle an incoming new password request.'
+      operationId: handleAnIncomingNewPasswordRequest
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                token:
+                  type: string
+                  description: ''
+                  example: distinctio
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: mschultz@example.net
+                password:
+                  type: string
+                  description: ''
+                  example: quis
+              required:
+                - token
+                - email
+                - password
+      security: []
+  /logout:
+    post:
+      summary: 'Destroy an authenticated session.'
+      operationId: destroyAnAuthenticatedSession
+      description: ''
+      parameters: []
+      responses: {  }
       tags:
         - Endpoints
       security: []

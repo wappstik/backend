@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "27f1d83e-a8c7-4278-94f5-9b3d8b805eb9",
+        "_postman_id": "caa37c6e-37d4-46e8-9923-214efe1bf98c",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -20,13 +20,13 @@
             "description": "",
             "item": [
                 {
-                    "name": "GET api\/user",
+                    "name": "GET \/",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
-                            "path": "api\/user",
+                            "path": "\/",
                             "query": [],
-                            "raw": "{{baseUrl}}\/api\/user"
+                            "raw": "{{baseUrl}}\/\/"
                         },
                         "method": "GET",
                         "header": [
@@ -63,13 +63,169 @@
                                 {
                                     "key": "access-control-allow-credentials",
                                     "value": "true"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6IlVNcDhDT2psWHJlVkFkVEx3YnVJMEE9PSIsInZhbHVlIjoieVRoT3o5S3ZrMmR5eER2QmN2NXU3eTNlaXg3eFZKMVQ3ejMvamZqZ3l4ckRudjVlR2MycGZ5ME9FZWRRM0ZSaVBWUkEwTlJFZWY2R2VaZ0tvRThrZFVxeXQvVWQ3ZzlqMkU3bXIzNjE4VjdDaFl0Vk5iU3dLbmNRZUc2ZFVBbWMiLCJtYWMiOiJjM2ZmMjdjYzBhMzQ0ODRlNjllMjgyYjA4ZGNmZjgxMWZjZjMzMzg1ZTgyNDM2ZjM5NWY0ZDc3MDdkZTdmZDNjIiwidGFnIjoiIn0%3D; expires=Sat, 06 Jul 2024 16:15:51 GMT; Max-Age=7200; path=\/; samesite=lax; laravel_session=eyJpdiI6IkgxQ1UzZ08vTW44MnlDaDJ6STNGTmc9PSIsInZhbHVlIjoiNE1NUTkxbmxLUGUrUi9CUWJQMlYzNzY3OXd5Mkg4My81K0UyejJ5MW5qRk82ckRlQjEwZEU2cTd1ZFYxc0FFS0tVdmYxL01CMVhxNlVzVlN4RXZVNHlOQnBZdjJ0R1ZDV1VWQ1U1QUo0Y0c1c1lKVnpja2grYXpmcnR3NzBMTmQiLCJtYWMiOiJlMmI0MmNlNmY0N2VhMDhmOTU0MTZjZWZjNzhlMWMzNGVkMTVhZTljNGY2ODVjNTI2OTMyZmVlMTUwZTJkZjc2IiwidGFnIjoiIn0%3D; expires=Sat, 06 Jul 2024 16:15:51 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 200,
+                            "body": "{\"Laravel\":\"11.14.0\"}",
                             "name": ""
                         }
                     ]
+                },
+                {
+                    "name": "Handle an incoming registration request.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "register",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/register"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"wukjs\",\"email\":\"jankunding@example.org\",\"password\":\"nemo\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Handle an incoming authentication request.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "login",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/login"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"email\":\"parisian.roselyn@example.org\",\"password\":\"V|,\\\/BzhYuj#cz(M>YJt\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Handle an incoming password reset link request.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "forgot-password",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/forgot-password"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"email\":\"sanford.otho@example.com\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Handle an incoming new password request.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "reset-password",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/reset-password"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"token\":\"distinctio\",\"email\":\"mschultz@example.net\",\"password\":\"quis\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Destroy an authenticated session.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "logout",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/logout"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
                 }
             ]
         }
