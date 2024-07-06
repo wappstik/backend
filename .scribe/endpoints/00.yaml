@@ -4,7 +4,7 @@ endpoints:
   -
     httpMethods:
       - GET
-    uri: api/user
+    uri: /
     metadata:
       groupName: Endpoints
       groupDescription: ''
@@ -26,15 +26,256 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"Laravel":"11.14.0"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           access-control-allow-origin: 'http://localhost:3000'
           access-control-allow-credentials: 'true'
+          set-cookie: 'XSRF-TOKEN=eyJpdiI6IlVNcDhDT2psWHJlVkFkVEx3YnVJMEE9PSIsInZhbHVlIjoieVRoT3o5S3ZrMmR5eER2QmN2NXU3eTNlaXg3eFZKMVQ3ejMvamZqZ3l4ckRudjVlR2MycGZ5ME9FZWRRM0ZSaVBWUkEwTlJFZWY2R2VaZ0tvRThrZFVxeXQvVWQ3ZzlqMkU3bXIzNjE4VjdDaFl0Vk5iU3dLbmNRZUc2ZFVBbWMiLCJtYWMiOiJjM2ZmMjdjYzBhMzQ0ODRlNjllMjgyYjA4ZGNmZjgxMWZjZjMzMzg1ZTgyNDM2ZjM5NWY0ZDc3MDdkZTdmZDNjIiwidGFnIjoiIn0%3D; expires=Sat, 06 Jul 2024 16:15:51 GMT; Max-Age=7200; path=/; samesite=lax; laravel_session=eyJpdiI6IkgxQ1UzZ08vTW44MnlDaDJ6STNGTmc9PSIsInZhbHVlIjoiNE1NUTkxbmxLUGUrUi9CUWJQMlYzNzY3OXd5Mkg4My81K0UyejJ5MW5qRk82ckRlQjEwZEU2cTd1ZFYxc0FFS0tVdmYxL01CMVhxNlVzVlN4RXZVNHlOQnBZdjJ0R1ZDV1VWQ1U1QUo0Y0c1c1lKVnpja2grYXpmcnR3NzBMTmQiLCJtYWMiOiJlMmI0MmNlNmY0N2VhMDhmOTU0MTZjZWZjNzhlMWMzNGVkMTVhZTljNGY2ODVjNTI2OTMyZmVlMTUwZTJkZjc2IiwidGFnIjoiIn0%3D; expires=Sat, 06 Jul 2024 16:15:51 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
         description: null
         custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: register
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Handle an incoming registration request.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: wukjs
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address. Must not be greater than 255 characters.'
+        required: true
+        example: jankunding@example.org
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: nemo
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      name: wukjs
+      email: jankunding@example.org
+      password: nemo
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: login
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Handle an incoming authentication request.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: parisian.roselyn@example.org
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: 'V|,/BzhYuj#cz(M>YJt'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      email: parisian.roselyn@example.org
+      password: 'V|,/BzhYuj#cz(M>YJt'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: forgot-password
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Handle an incoming password reset link request.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: sanford.otho@example.com
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      email: sanford.otho@example.com
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: reset-password
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Handle an incoming new password request.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      token:
+        name: token
+        description: ''
+        required: true
+        example: distinctio
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: mschultz@example.net
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: quis
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      token: distinctio
+      email: mschultz@example.net
+      password: quis
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: logout
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Destroy an authenticated session.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
     responseFields: []
     auth: []
     controller: null
