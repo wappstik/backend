@@ -7,10 +7,31 @@ on:
     branches:
       - main
 jobs:
-  Deploy-Production:
+  deploy-production:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.1
+          tools: composer
+      - name: Install Composer Dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest --optimize-autoloader --no-dev
+      - name: Copy .env file
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+      - name: Configure Laravel Environment Variables
+        run: |
+          echo "DB_CONNECTION=pgsql" >> .env
+          echo "DB_HOST=${{ secrets.DB_HOST }}" >> .env
+          echo "DB_PORT=${{ secrets.DB_PORT }}" >> .env
+          echo "DB_DATABASE=${{ secrets.DB_DATABASE}}" >> .env
+          echo "DB_USERNAME=${{ secrets.DB_USERNAME }}" >> .env
+          echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> .env
+      - name: Run migrations
+        run: php artisan migrate
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
       - name: Pull Vercel Environment Information
