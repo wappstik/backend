@@ -6,6 +6,7 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rules\File;
 
 class CategoryController extends Controller
 {
@@ -24,7 +25,7 @@ class CategoryController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name' => 'required|unique:categories,name',
-            'image' => 'image',
+            'image' => File::image()->max('10MB'),
         ]);
         
         if ($validator->fails()) {
@@ -59,7 +60,7 @@ class CategoryController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name' => 'string',
-            'image' => 'image',
+            'image' => File::image()->max('10MB'),
         ]);
 
         if ($validator->fails()) {
