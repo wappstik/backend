@@ -1,0 +1,113 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost'
+paths:
+  /sanctum/csrf-cookie:
+    get:
+      summary: 'Return an empty response simply to trigger the storage of the CSRF cookie in the browser.'
+      operationId: returnAnEmptyResponseSimplyToTriggerTheStorageOfTheCSRFCookieInTheBrowser
+      description: ''
+      parameters: []
+      responses:
+        204:
+          description: ''
+      tags:
+        - Endpoints
+      security: []
+  /login:
+    post:
+      summary: ''
+      operationId: postLogin
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: jed82@example.org
+                password:
+                  type: string
+                  description: ''
+                  example: vel
+              required:
+                - email
+                - password
+      security: []
+  /register:
+    post:
+      summary: ''
+      operationId: postRegister
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: in
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: kgusikowski@example.org
+                password:
+                  type: string
+                  description: ''
+                  example: sint
+              required:
+                - name
+                - email
+                - password
+      security: []
+  /logout:
+    post:
+      summary: ''
+      operationId: postLogout
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /up:
+    get:
+      summary: ''
+      operationId: getUp
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n        <title>Laravel</title>\n\n        <!-- Fonts -->\n        <link rel=\"preconnect\" href=\"https://fonts.bunny.net\">\n        <link href=\"https://fonts.bunny.net/css?family=figtree:400,600&display=swap\" rel=\"stylesheet\" />\n\n        <!-- Styles -->\n        <script src=\"https://cdn.tailwindcss.com\"></script>\n\n        <script>\n            tailwind.config = {\n                theme: {\n                    extend: {\n                        fontFamily: {\n                            sans: ['Figtree', 'ui-sans-serif', 'system-ui', 'sans-serif', \"Apple Color Emoji\", \"Segoe UI Emoji\"],\n                        }\n                    }\n                }\n            }\n        </script>\n    </head>\n    <body class=\"antialiased\">\n        <div class=\"relative sm:flex sm:justify-center sm:items-center min-h-screen bg-gray-100 selection:bg-red-500 selection:text-white\">\n            <div class=\"w-full sm:w-3/4 xl:w-1/2 mx-auto p-6\">\n                <div class=\"px-6 py-4 bg-white from-gray-700/50 via-transparent rounded-lg shadow-2xl shadow-gray-500/20 flex items-center focus:outline focus:outline-2 focus:outline-red-500\">\n                    <div class=\"relative flex h-3 w-3\">\n                      <span class=\"animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75\"></span>\n                      <span class=\"relative inline-flex rounded-full h-3 w-3 bg-green-400\"></span>\n                    </div>\n\n                    <div class=\"ml-6\">\n                        <h2 class=\"text-xl font-semibold text-gray-900\">Application up</h2>\n\n                        <p class=\"mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed\">\n                            HTTP request received.\n\n                                                            Response successfully rendered in 1355ms.\n                                                    </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </body>\n</html>\n"
+      tags:
+        - Endpoints
+      security: []
+tags:
+  -
+    name: Endpoints
+    description: ''

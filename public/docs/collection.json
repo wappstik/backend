@@ -1,0 +1,214 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/localhost"
+        }
+    ],
+    "info": {
+        "name": "Laravel",
+        "_postman_id": "f5c68a2c-d5d0-42ab-9eba-dffd8dd71f7e",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "Return an empty response simply to trigger the storage of the CSRF cookie in the browser.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "sanctum\/csrf-cookie",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/sanctum\/csrf-cookie"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6IjBXSDFBdElaZUVrU1JOUE9mQWl4Z3c9PSIsInZhbHVlIjoiVFF2UllkODBpbjZFM28yRVBsdTZVSGQ4QitRRlpzY3hFYzNOeGtlM2l0ZGZNVDdtMC9lUnNwNm1nb3U4cEsweExlU0k0c2J4YUNqSEUxRXJUVmtmZVhiemtSMjBSaG9LTkRveEl5T3ZIWjI5dURMMUVIVlJFSVBiZk5uYk1BbGciLCJtYWMiOiI5OTM5YjViMDg2MDUxN2Y2ODI5NzFmMDllYThkMzg0OTI2ODFjZDU3ZmFjYzg0YjhiNzJkZDhjMGU2ZmI5OTZmIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 14:58:03 GMT; Max-Age=7200; path=\/; samesite=lax; laravel_session=eyJpdiI6IjhQU2czaE5VU0Z2Q0xwYW8wOUlUY2c9PSIsInZhbHVlIjoiVXlrc09yM2lmRGtSNUVoelBlTm1STjZEY0FqRi8wTStZampoanIxbHVVWlo3S0M5eVc3MlNNaHk1cERXYzkzMFFJeUVIaFgxQkxjWXIxeTJSbDBGeGdMQXdjeU94cGlQVC9GWUdVeFZ0dlBHNTVEcyswUXRhUG5pVTYxNDNybysiLCJtYWMiOiI2OGY5YTk4ZjRjYWQ5OWU1ZmRhNWIyZDNhNTViOWU0NjJlYjM5NmVmOTg5MjFjNzg1ZmZmZTMzNDU1ZTVkZmM2IiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 14:58:03 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 204,
+                            "body": "",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST login",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "login",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/login"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"email\":\"jed82@example.org\",\"password\":\"vel\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST register",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "register",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/register"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"in\",\"email\":\"kgusikowski@example.org\",\"password\":\"sint\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST logout",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "logout",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/logout"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET up",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "up",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/up"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "content-type",
+                                    "value": "text\/html; charset=UTF-8"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6IkRDTUVCOEZ6UC81U3hqdHBPREdFaGc9PSIsInZhbHVlIjoiRGN1eHVkM1JJMFh0cW9xUHRZWWtjY241UXpjN0IzRlBwMGdhM2ZwN0psUnBxdzRCaDRVZXZZdVc2Y0FwZVplTXNKZ00wTkpsZmZmeHlPdDhVdXdrVFZYdUYrRHlyU2NOb2xka3FpUytvSFArV1hnMUxuaWVSazA3bmsvZzZmUzkiLCJtYWMiOiI1YzU0MTA5MzI5NmY4ODc0NTY0YzA5NGIyZDQ3NTRiZGU0Njg0YzFhNzhjODA5YmMxYjczZTIwOWU4OGNiYTU0IiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 14:58:04 GMT; Max-Age=7200; path=\/; samesite=lax; laravel_session=eyJpdiI6IjhJZnVRbENGNkRQaHd5MFkxSFZraGc9PSIsInZhbHVlIjoiZmdreFllRGNxN0FIZVdJd1hSVG8wMUM3NHJPTGdwSVRuZWd0Y2dQRHZZL3NtYjQrTExPYjd4M1RLTE0zU0VydTJ1R29PTHlDWnY4V21heEV0VXExRUN4V3FqVkl3VGtnOEoxVzR1dFhOa2FkVlhTcVhvdUtJTkVNMXRHeGd3T3giLCJtYWMiOiJlYzAzMWQwY2FlMGZlZDRiMjQyYThlYjhlMmE5ZjRmZmM1ZWQ0ODFhNWFiZWJkMmIxMjhjNDA3MzU2M2E4ZTgzIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 14:58:04 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n        <title>Laravel<\/title>\n\n        <!-- Fonts -->\n        <link rel=\"preconnect\" href=\"https:\/\/fonts.bunny.net\">\n        <link href=\"https:\/\/fonts.bunny.net\/css?family=figtree:400,600&display=swap\" rel=\"stylesheet\" \/>\n\n        <!-- Styles -->\n        <script src=\"https:\/\/cdn.tailwindcss.com\"><\/script>\n\n        <script>\n            tailwind.config = {\n                theme: {\n                    extend: {\n                        fontFamily: {\n                            sans: ['Figtree', 'ui-sans-serif', 'system-ui', 'sans-serif', \"Apple Color Emoji\", \"Segoe UI Emoji\"],\n                        }\n                    }\n                }\n            }\n        <\/script>\n    <\/head>\n    <body class=\"antialiased\">\n        <div class=\"relative sm:flex sm:justify-center sm:items-center min-h-screen bg-gray-100 selection:bg-red-500 selection:text-white\">\n            <div class=\"w-full sm:w-3\/4 xl:w-1\/2 mx-auto p-6\">\n                <div class=\"px-6 py-4 bg-white from-gray-700\/50 via-transparent rounded-lg shadow-2xl shadow-gray-500\/20 flex items-center focus:outline focus:outline-2 focus:outline-red-500\">\n                    <div class=\"relative flex h-3 w-3\">\n                      <span class=\"animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75\"><\/span>\n                      <span class=\"relative inline-flex rounded-full h-3 w-3 bg-green-400\"><\/span>\n                    <\/div>\n\n                    <div class=\"ml-6\">\n                        <h2 class=\"text-xl font-semibold text-gray-900\">Application up<\/h2>\n\n                        <p class=\"mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed\">\n                            HTTP request received.\n\n                                                            Response successfully rendered in 1355ms.\n                                                    <\/p>\n                    <\/div>\n                <\/div>\n            <\/div>\n        <\/div>\n    <\/body>\n<\/html>\n",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

@@ -1,0 +1,271 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: sanctum/csrf-cookie
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Return an empty response simply to trigger the storage of the CSRF cookie in the browser.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 204
+        content: ''
+        headers:
+          cache-control: 'no-cache, private'
+          access-control-allow-origin: '*'
+          set-cookie: 'XSRF-TOKEN=eyJpdiI6IjBXSDFBdElaZUVrU1JOUE9mQWl4Z3c9PSIsInZhbHVlIjoiVFF2UllkODBpbjZFM28yRVBsdTZVSGQ4QitRRlpzY3hFYzNOeGtlM2l0ZGZNVDdtMC9lUnNwNm1nb3U4cEsweExlU0k0c2J4YUNqSEUxRXJUVmtmZVhiemtSMjBSaG9LTkRveEl5T3ZIWjI5dURMMUVIVlJFSVBiZk5uYk1BbGciLCJtYWMiOiI5OTM5YjViMDg2MDUxN2Y2ODI5NzFmMDllYThkMzg0OTI2ODFjZDU3ZmFjYzg0YjhiNzJkZDhjMGU2ZmI5OTZmIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 14:58:03 GMT; Max-Age=7200; path=/; samesite=lax; laravel_session=eyJpdiI6IjhQU2czaE5VU0Z2Q0xwYW8wOUlUY2c9PSIsInZhbHVlIjoiVXlrc09yM2lmRGtSNUVoelBlTm1STjZEY0FqRi8wTStZampoanIxbHVVWlo3S0M5eVc3MlNNaHk1cERXYzkzMFFJeUVIaFgxQkxjWXIxeTJSbDBGeGdMQXdjeU94cGlQVC9GWUdVeFZ0dlBHNTVEcyswUXRhUG5pVTYxNDNybysiLCJtYWMiOiI2OGY5YTk4ZjRjYWQ5OWU1ZmRhNWIyZDNhNTViOWU0NjJlYjM5NmVmOTg5MjFjNzg1ZmZmZTMzNDU1ZTVkZmM2IiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 14:58:03 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: login
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: jed82@example.org
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: vel
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      email: jed82@example.org
+      password: vel
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: register
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: ''
+        required: true
+        example: in
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: kgusikowski@example.org
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: sint
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      name: in
+      email: kgusikowski@example.org
+      password: sint
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: logout
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: up
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |
+          <!DOCTYPE html>
+          <html lang="en">
+              <head>
+                  <meta charset="utf-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                  <title>Laravel</title>
+
+                  <!-- Fonts -->
+                  <link rel="preconnect" href="https://fonts.bunny.net">
+                  <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+
+                  <!-- Styles -->
+                  <script src="https://cdn.tailwindcss.com"></script>
+
+                  <script>
+                      tailwind.config = {
+                          theme: {
+                              extend: {
+                                  fontFamily: {
+                                      sans: ['Figtree', 'ui-sans-serif', 'system-ui', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji"],
+                                  }
+                              }
+                          }
+                      }
+                  </script>
+              </head>
+              <body class="antialiased">
+                  <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-gray-100 selection:bg-red-500 selection:text-white">
+                      <div class="w-full sm:w-3/4 xl:w-1/2 mx-auto p-6">
+                          <div class="px-6 py-4 bg-white from-gray-700/50 via-transparent rounded-lg shadow-2xl shadow-gray-500/20 flex items-center focus:outline focus:outline-2 focus:outline-red-500">
+                              <div class="relative flex h-3 w-3">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
+                              </div>
+
+                              <div class="ml-6">
+                                  <h2 class="text-xl font-semibold text-gray-900">Application up</h2>
+
+                                  <p class="mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                                      HTTP request received.
+
+                                                                      Response successfully rendered in 1355ms.
+                                                              </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </body>
+          </html>
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          set-cookie: 'XSRF-TOKEN=eyJpdiI6IkRDTUVCOEZ6UC81U3hqdHBPREdFaGc9PSIsInZhbHVlIjoiRGN1eHVkM1JJMFh0cW9xUHRZWWtjY241UXpjN0IzRlBwMGdhM2ZwN0psUnBxdzRCaDRVZXZZdVc2Y0FwZVplTXNKZ00wTkpsZmZmeHlPdDhVdXdrVFZYdUYrRHlyU2NOb2xka3FpUytvSFArV1hnMUxuaWVSazA3bmsvZzZmUzkiLCJtYWMiOiI1YzU0MTA5MzI5NmY4ODc0NTY0YzA5NGIyZDQ3NTRiZGU0Njg0YzFhNzhjODA5YmMxYjczZTIwOWU4OGNiYTU0IiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 14:58:04 GMT; Max-Age=7200; path=/; samesite=lax; laravel_session=eyJpdiI6IjhJZnVRbENGNkRQaHd5MFkxSFZraGc9PSIsInZhbHVlIjoiZmdreFllRGNxN0FIZVdJd1hSVG8wMUM3NHJPTGdwSVRuZWd0Y2dQRHZZL3NtYjQrTExPYjd4M1RLTE0zU0VydTJ1R29PTHlDWnY4V21heEV0VXExRUN4V3FqVkl3VGtnOEoxVzR1dFhOa2FkVlhTcVhvdUtJTkVNMXRHeGd3T3giLCJtYWMiOiJlYzAzMWQwY2FlMGZlZDRiMjQyYThlYjhlMmE5ZjRmZmM1ZWQ0ODFhNWFiZWJkMmIxMjhjNDA3MzU2M2E4ZTgzIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 14:58:04 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
