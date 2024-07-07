@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Pack>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\PackCategory>
  */
-class PackFactory extends Factory
+class PackCategoryFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,8 +17,8 @@ class PackFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->name(),
-            'user_id' => $this->faker->numberBetween(1, 5),
+            'category_id' => $this->faker->numberBetween(1, 5),
+            'pack_id' => $this->faker->numberBetween(1, 5),
         ];
     }
 }

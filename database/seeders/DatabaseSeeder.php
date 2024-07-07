@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Category;
 use App\Models\Pack;
+use App\Models\PackCategory;
 use App\Models\Sticker;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -25,6 +26,7 @@ class DatabaseSeeder extends Seeder
         User::factory(10)->create();
         Category::factory(5)->create();
         Pack::factory(5)->create();
+        PackCategory::factory(20)->create();
         Sticker::factory(30)->create();
     }
 }
