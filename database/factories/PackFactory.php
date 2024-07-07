@@ -19,7 +19,6 @@ class PackFactory extends Factory
         return [
             'name' => $this->faker->name(),
             'user_id' => $this->faker->numberBetween(1, 5),
-            'category_id' => $this->faker->numberBetween(1, 5),
         ];
     }
 }
