@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 
 class CategoryController extends Controller
 {
@@ -12,15 +14,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
+        return Category::all();
     }
 
     /**
@@ -28,7 +22,26 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|unique:categories,name',
+            'image' => 'image',
+        ]);
+        
+        if ($validator->fails()) {
+            return response()->json([
+                'message' => 'The given data was invalid.',
+                'errors' => $validator->errors(),
+            ], 422);
+        }
+
+        // store image
+        if ($request->hasFile('image')) {
+            $path = $request->file('image')->store('categories');
+            $request->merge(['image' => $path]);
+        }
+
+        $category = Category::create($request->all());
+        return $category;
     }
 
     /**
@@ -36,15 +49,7 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Category $category)
-    {
-        //
+        return $category;
     }
 
     /**
@@ -52,7 +57,30 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'name' => 'string',
+            'image' => 'image',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'message' => 'The given data was invalid.',
+                'errors' => $validator->errors(),
+            ], 422);
+        }
+
+        // store image
+        if ($request->hasFile('image')) {
+            $path = $request->file('image')->store('categories');
+            $request->merge(['image' => $path]);
+
+            // delete old image
+            Storage::delete($category->image);
+            
+        }
+
+        $category->update($request->all());
+        return $category;
     }
 
     /**
@@ -60,6 +88,7 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        //
+        $category->delete();
+        return response()->json(['message' => 'Category deleted successfully.']);
     }
 }
