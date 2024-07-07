@@ -35,7 +35,7 @@ endpoints:
           content-type: application/json
           access-control-allow-origin: 'http://localhost:3000'
           access-control-allow-credentials: 'true'
-          set-cookie: 'XSRF-TOKEN=eyJpdiI6IlVNcDhDT2psWHJlVkFkVEx3YnVJMEE9PSIsInZhbHVlIjoieVRoT3o5S3ZrMmR5eER2QmN2NXU3eTNlaXg3eFZKMVQ3ejMvamZqZ3l4ckRudjVlR2MycGZ5ME9FZWRRM0ZSaVBWUkEwTlJFZWY2R2VaZ0tvRThrZFVxeXQvVWQ3ZzlqMkU3bXIzNjE4VjdDaFl0Vk5iU3dLbmNRZUc2ZFVBbWMiLCJtYWMiOiJjM2ZmMjdjYzBhMzQ0ODRlNjllMjgyYjA4ZGNmZjgxMWZjZjMzMzg1ZTgyNDM2ZjM5NWY0ZDc3MDdkZTdmZDNjIiwidGFnIjoiIn0%3D; expires=Sat, 06 Jul 2024 16:15:51 GMT; Max-Age=7200; path=/; samesite=lax; laravel_session=eyJpdiI6IkgxQ1UzZ08vTW44MnlDaDJ6STNGTmc9PSIsInZhbHVlIjoiNE1NUTkxbmxLUGUrUi9CUWJQMlYzNzY3OXd5Mkg4My81K0UyejJ5MW5qRk82ckRlQjEwZEU2cTd1ZFYxc0FFS0tVdmYxL01CMVhxNlVzVlN4RXZVNHlOQnBZdjJ0R1ZDV1VWQ1U1QUo0Y0c1c1lKVnpja2grYXpmcnR3NzBMTmQiLCJtYWMiOiJlMmI0MmNlNmY0N2VhMDhmOTU0MTZjZWZjNzhlMWMzNGVkMTVhZTljNGY2ODVjNTI2OTMyZmVlMTUwZTJkZjc2IiwidGFnIjoiIn0%3D; expires=Sat, 06 Jul 2024 16:15:51 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+          set-cookie: 'XSRF-TOKEN=eyJpdiI6IlV2OTgxYXJmd1prdjVETUcwdXpLS2c9PSIsInZhbHVlIjoialJ6YlZYVVBITUtDSllkMzZxYm13WTJreFZGNnRTUVg5THVwR3BXbCtpZmN3ZndPNkUzYmt0RGx0aE9oUzNobStQaHJlOUNLV3dQK3hpT0FsTjluZFJjaFhHbVlML1FVVENYbDBDZnRSU0JWL2VpQ2NGQXlSeXBqQzVmT29RYzgiLCJtYWMiOiIyMDhhZTJiOWVjZmQyMjZkNDU0NWM1MDMyNDNlOTYyZDc4OWQwMTk5NzJlNWE0YWY5NjFjZjUyYjVkN2I4ZGM1IiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 04:36:49 GMT; Max-Age=7199; path=/; secure; samesite=lax; laravel_session=eyJpdiI6ImIxc2l6eG94TkIyWkYyQ0l1L3VxQnc9PSIsInZhbHVlIjoiTTZRSlcrdWoxUFlYRDZVaWN5MGlISUdFOHZDMmVqc1pncURTWm5iWFFpSzMwV1dIZ3puUWRHYkdHdVNyK2lNWEN2WFZTK2tqak1oS2oyQ3Q3VVk4bHljaTIxdFhNOWlzS29WOGpWSm1ObVlQWm5HOElxckcxU1VFNFAwZzFzQzEiLCJtYWMiOiJhY2UyYjUxMWIyZTY4NTEyYjE2MGEwNjA4ODg5ZTJhNjQ5ZDE2MjI0MTljNjI5ZTEwZWQ0OTAyNjQwYzkyZGQ5IiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 04:36:49 GMT; Max-Age=7199; path=/; httponly; samesite=lax'
         description: null
         custom: []
     responseFields: []
@@ -69,7 +69,7 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: wukjs
+        example: jzvzbpldrfdkrimo
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -78,7 +78,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: jankunding@example.org
+        example: salvatore.schmitt@example.com
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -87,15 +87,15 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: nemo
+        example: id
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      name: wukjs
-      email: jankunding@example.org
-      password: nemo
+      name: jzvzbpldrfdkrimo
+      email: salvatore.schmitt@example.com
+      password: id
     fileParameters: []
     responses: []
     responseFields: []
@@ -129,7 +129,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: parisian.roselyn@example.org
+        example: smitham.neil@example.com
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -138,14 +138,14 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: 'V|,/BzhYuj#cz(M>YJt'
+        example: "j'mRRV(Gpo0"
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      email: parisian.roselyn@example.org
-      password: 'V|,/BzhYuj#cz(M>YJt'
+      email: smitham.neil@example.com
+      password: "j'mRRV(Gpo0"
     fileParameters: []
     responses: []
     responseFields: []
@@ -179,13 +179,13 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: sanford.otho@example.com
+        example: ilynch@example.net
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      email: sanford.otho@example.com
+      email: ilynch@example.net
     fileParameters: []
     responses: []
     responseFields: []
@@ -219,7 +219,7 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: distinctio
+        example: saepe
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -228,7 +228,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: mschultz@example.net
+        example: yjacobs@example.org
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -237,15 +237,15 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: quis
+        example: aut
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      token: distinctio
-      email: mschultz@example.net
-      password: quis
+      token: saepe
+      email: yjacobs@example.org
+      password: aut
     fileParameters: []
     responses: []
     responseFields: []

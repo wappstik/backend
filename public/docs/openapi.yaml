@@ -5,7 +5,7 @@ info:
   version: 1.0.0
 servers:
   -
-    url: 'http://localhost:8000'
+    url: 'https://wappstik-be.vercel.app'
 paths:
   /:
     get:
@@ -48,15 +48,15 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: wukjs
+                  example: jzvzbpldrfdkrimo
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: jankunding@example.org
+                  example: salvatore.schmitt@example.com
                 password:
                   type: string
                   description: ''
-                  example: nemo
+                  example: id
               required:
                 - name
                 - email
@@ -81,11 +81,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: parisian.roselyn@example.org
+                  example: smitham.neil@example.com
                 password:
                   type: string
                   description: ''
-                  example: 'V|,/BzhYuj#cz(M>YJt'
+                  example: "j'mRRV(Gpo0"
               required:
                 - email
                 - password
@@ -109,7 +109,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: sanford.otho@example.com
+                  example: ilynch@example.net
               required:
                 - email
       security: []
@@ -132,15 +132,15 @@ paths:
                 token:
                   type: string
                   description: ''
-                  example: distinctio
+                  example: saepe
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: mschultz@example.net
+                  example: yjacobs@example.org
                 password:
                   type: string
                   description: ''
-                  example: quis
+                  example: aut
               required:
                 - token
                 - email

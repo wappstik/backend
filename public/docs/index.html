@@ -26,7 +26,7 @@
             </style>
 
     <script>
-        var tryItOutBaseUrl = "http://localhost:8000";
+        var tryItOutBaseUrl = "https://wappstik-be.vercel.app";
         var useCsrf = Boolean();
         var csrfUrl = "/sanctum/csrf-cookie";
     </script>
@@ -100,7 +100,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: July 6, 2024</li>
+        <li>Last updated: July 7, 2024</li>
     </ul>
 </div>
 
@@ -109,7 +109,7 @@
     <div class="content">
         <h1 id="introduction">Introduction</h1>
 <aside>
-    <strong>Base URL</strong>: <code>http://localhost:8000</code>
+    <strong>Base URL</strong>: <code>https://wappstik-be.vercel.app</code>
 </aside>
 <p>This documentation aims to provide all the information you need to work with our API.</p>
 <aside>As you scroll, you'll see code examples for working with the API in different programming languages in the dark area to the right (or as part of the content on mobile).
@@ -135,14 +135,14 @@ You can switch the language used with the tabs at the top right (or from the nav
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/" \
+    --get "https://wappstik-be.vercel.app/" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/"
+    "https://wappstik-be.vercel.app/"
 );
 
 const headers = {
@@ -169,7 +169,7 @@ fetch(url, {
 content-type: application/json
 access-control-allow-origin: http://localhost:3000
 access-control-allow-credentials: true
-set-cookie: XSRF-TOKEN=eyJpdiI6IlVNcDhDT2psWHJlVkFkVEx3YnVJMEE9PSIsInZhbHVlIjoieVRoT3o5S3ZrMmR5eER2QmN2NXU3eTNlaXg3eFZKMVQ3ejMvamZqZ3l4ckRudjVlR2MycGZ5ME9FZWRRM0ZSaVBWUkEwTlJFZWY2R2VaZ0tvRThrZFVxeXQvVWQ3ZzlqMkU3bXIzNjE4VjdDaFl0Vk5iU3dLbmNRZUc2ZFVBbWMiLCJtYWMiOiJjM2ZmMjdjYzBhMzQ0ODRlNjllMjgyYjA4ZGNmZjgxMWZjZjMzMzg1ZTgyNDM2ZjM5NWY0ZDc3MDdkZTdmZDNjIiwidGFnIjoiIn0%3D; expires=Sat, 06 Jul 2024 16:15:51 GMT; Max-Age=7200; path=/; samesite=lax; laravel_session=eyJpdiI6IkgxQ1UzZ08vTW44MnlDaDJ6STNGTmc9PSIsInZhbHVlIjoiNE1NUTkxbmxLUGUrUi9CUWJQMlYzNzY3OXd5Mkg4My81K0UyejJ5MW5qRk82ckRlQjEwZEU2cTd1ZFYxc0FFS0tVdmYxL01CMVhxNlVzVlN4RXZVNHlOQnBZdjJ0R1ZDV1VWQ1U1QUo0Y0c1c1lKVnpja2grYXpmcnR3NzBMTmQiLCJtYWMiOiJlMmI0MmNlNmY0N2VhMDhmOTU0MTZjZWZjNzhlMWMzNGVkMTVhZTljNGY2ODVjNTI2OTMyZmVlMTUwZTJkZjc2IiwidGFnIjoiIn0%3D; expires=Sat, 06 Jul 2024 16:15:51 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: XSRF-TOKEN=eyJpdiI6IlV2OTgxYXJmd1prdjVETUcwdXpLS2c9PSIsInZhbHVlIjoialJ6YlZYVVBITUtDSllkMzZxYm13WTJreFZGNnRTUVg5THVwR3BXbCtpZmN3ZndPNkUzYmt0RGx0aE9oUzNobStQaHJlOUNLV3dQK3hpT0FsTjluZFJjaFhHbVlML1FVVENYbDBDZnRSU0JWL2VpQ2NGQXlSeXBqQzVmT29RYzgiLCJtYWMiOiIyMDhhZTJiOWVjZmQyMjZkNDU0NWM1MDMyNDNlOTYyZDc4OWQwMTk5NzJlNWE0YWY5NjFjZjUyYjVkN2I4ZGM1IiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 04:36:49 GMT; Max-Age=7199; path=/; secure; samesite=lax; laravel_session=eyJpdiI6ImIxc2l6eG94TkIyWkYyQ0l1L3VxQnc9PSIsInZhbHVlIjoiTTZRSlcrdWoxUFlYRDZVaWN5MGlISUdFOHZDMmVqc1pncURTWm5iWFFpSzMwV1dIZ3puUWRHYkdHdVNyK2lNWEN2WFZTK2tqak1oS2oyQ3Q3VVk4bHljaTIxdFhNOWlzS29WOGpWSm1ObVlQWm5HOElxckcxU1VFNFAwZzFzQzEiLCJtYWMiOiJhY2UyYjUxMWIyZTY4NTEyYjE2MGEwNjA4ODg5ZTJhNjQ5ZDE2MjI0MTljNjI5ZTEwZWQ0OTAyNjQwYzkyZGQ5IiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 04:36:49 GMT; Max-Age=7199; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -261,20 +261,20 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/register" \
+    "https://wappstik-be.vercel.app/register" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"wukjs\",
-    \"email\": \"jankunding@example.org\",
-    \"password\": \"nemo\"
+    \"name\": \"jzvzbpldrfdkrimo\",
+    \"email\": \"salvatore.schmitt@example.com\",
+    \"password\": \"id\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/register"
+    "https://wappstik-be.vercel.app/register"
 );
 
 const headers = {
@@ -283,9 +283,9 @@ const headers = {
 };
 
 let body = {
-    "name": "wukjs",
-    "email": "jankunding@example.org",
-    "password": "nemo"
+    "name": "jzvzbpldrfdkrimo",
+    "email": "salvatore.schmitt@example.com",
+    "password": "id"
 };
 
 fetch(url, {
@@ -374,10 +374,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTregister"
-               value="wukjs"
+               value="jzvzbpldrfdkrimo"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>wukjs</code></p>
+<p>Must not be greater than 255 characters. Example: <code>jzvzbpldrfdkrimo</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -385,10 +385,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTregister"
-               value="jankunding@example.org"
+               value="salvatore.schmitt@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Must not be greater than 255 characters. Example: <code>jankunding@example.org</code></p>
+<p>Must be a valid email address. Must not be greater than 255 characters. Example: <code>salvatore.schmitt@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -396,10 +396,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTregister"
-               value="nemo"
+               value="id"
                data-component="body">
     <br>
-<p>Example: <code>nemo</code></p>
+<p>Example: <code>id</code></p>
         </div>
         </form>
 
@@ -416,19 +416,19 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/login" \
+    "https://wappstik-be.vercel.app/login" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"parisian.roselyn@example.org\",
-    \"password\": \"V|,\\/BzhYuj#cz(M&gt;YJt\"
+    \"email\": \"smitham.neil@example.com\",
+    \"password\": \"j\'mRRV(Gpo0\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/login"
+    "https://wappstik-be.vercel.app/login"
 );
 
 const headers = {
@@ -437,8 +437,8 @@ const headers = {
 };
 
 let body = {
-    "email": "parisian.roselyn@example.org",
-    "password": "V|,\/BzhYuj#cz(M&gt;YJt"
+    "email": "smitham.neil@example.com",
+    "password": "j'mRRV(Gpo0"
 };
 
 fetch(url, {
@@ -527,10 +527,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTlogin"
-               value="parisian.roselyn@example.org"
+               value="smitham.neil@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>parisian.roselyn@example.org</code></p>
+<p>Must be a valid email address. Example: <code>smitham.neil@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -538,10 +538,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTlogin"
-               value="V|,/BzhYuj#cz(M>YJt"
+               value="j'mRRV(Gpo0"
                data-component="body">
     <br>
-<p>Example: <code>V|,/BzhYuj#cz(M&gt;YJt</code></p>
+<p>Example: <code>j'mRRV(Gpo0</code></p>
         </div>
         </form>
 
@@ -558,18 +558,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/forgot-password" \
+    "https://wappstik-be.vercel.app/forgot-password" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"sanford.otho@example.com\"
+    \"email\": \"ilynch@example.net\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/forgot-password"
+    "https://wappstik-be.vercel.app/forgot-password"
 );
 
 const headers = {
@@ -578,7 +578,7 @@ const headers = {
 };
 
 let body = {
-    "email": "sanford.otho@example.com"
+    "email": "ilynch@example.net"
 };
 
 fetch(url, {
@@ -667,10 +667,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTforgot-password"
-               value="sanford.otho@example.com"
+               value="ilynch@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>sanford.otho@example.com</code></p>
+<p>Must be a valid email address. Example: <code>ilynch@example.net</code></p>
         </div>
         </form>
 
@@ -687,20 +687,20 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/reset-password" \
+    "https://wappstik-be.vercel.app/reset-password" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"token\": \"distinctio\",
-    \"email\": \"mschultz@example.net\",
-    \"password\": \"quis\"
+    \"token\": \"saepe\",
+    \"email\": \"yjacobs@example.org\",
+    \"password\": \"aut\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/reset-password"
+    "https://wappstik-be.vercel.app/reset-password"
 );
 
 const headers = {
@@ -709,9 +709,9 @@ const headers = {
 };
 
 let body = {
-    "token": "distinctio",
-    "email": "mschultz@example.net",
-    "password": "quis"
+    "token": "saepe",
+    "email": "yjacobs@example.org",
+    "password": "aut"
 };
 
 fetch(url, {
@@ -800,10 +800,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="token"                data-endpoint="POSTreset-password"
-               value="distinctio"
+               value="saepe"
                data-component="body">
     <br>
-<p>Example: <code>distinctio</code></p>
+<p>Example: <code>saepe</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -811,10 +811,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTreset-password"
-               value="mschultz@example.net"
+               value="yjacobs@example.org"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>mschultz@example.net</code></p>
+<p>Must be a valid email address. Example: <code>yjacobs@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -822,10 +822,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTreset-password"
-               value="quis"
+               value="aut"
                data-component="body">
     <br>
-<p>Example: <code>quis</code></p>
+<p>Example: <code>aut</code></p>
         </div>
         </form>
 
@@ -842,14 +842,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/logout" \
+    "https://wappstik-be.vercel.app/logout" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/logout"
+    "https://wappstik-be.vercel.app/logout"
 );
 
 const headers = {
