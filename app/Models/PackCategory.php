@@ -15,4 +15,9 @@ class PackCategory extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function pack()
+    {
+        return $this->belongsTo(Pack::class);
+    }
 }
