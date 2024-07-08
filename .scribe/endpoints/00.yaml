@@ -31,7 +31,7 @@ endpoints:
         headers:
           cache-control: 'no-cache, private'
           access-control-allow-origin: '*'
-          set-cookie: 'XSRF-TOKEN=eyJpdiI6Imt0bEVyQnRyZGx6TEROSk14dWtyb2c9PSIsInZhbHVlIjoiMkx2VXFzcCtwM1NmK1cvNkxLOWY2WENJS3F0T2kwWnJqU2hzZVpZY2pDeEJ1a2tQUGpUQi90eWd1WlhwbUFnZzJLNVpzU2tpS01oMFovRndydmZjMnJrUG1iVkE0OUJQMzlUdkdCa2cwQVhDU3Y1UmtuYWl4OVlRa2xmYTk4TXMiLCJtYWMiOiJmODc3ZTFhMDQ4MzMxYzQ2YTM2NTQzNjI3YTI3OGU1ZTg0ODljYzhiOTZiOTE4ODA4YWE4MDkzZTUyNTQzMzU5IiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 15:37:29 GMT; Max-Age=7200; path=/; samesite=lax; laravel_session=eyJpdiI6ImhVWE4zNGFRdHNMci82RlV3VUQ4VXc9PSIsInZhbHVlIjoic0FHMkYxUjhPaWlVRHBuNk0yTTRjOGVkSkoyVlJDKzUzMmNyR3R5ZkQ0Q2NuUnRMYVFaYTZQK0E3bVRDay8wL3V5MGNLZDV1aldsNmQ3WEY4QmJCNEcvRVMrM254K0lhVzRSQmpNWUdkb1htK2VOL1NKb0pJNEU3blBRQ3AvaU4iLCJtYWMiOiJmNzQ1MjQzNGI5MTE3ZDRhNzY0NWU0OGUxMzkyM2IxMTgzMjc4ODM3NjMzNDAxMDViYzRmOWFlYTVkNzA0NzAxIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 15:37:29 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+          set-cookie: 'XSRF-TOKEN=eyJpdiI6InhwVTVsbStYQ2p1aG40Q1RtWWpZdEE9PSIsInZhbHVlIjoidUsrLyt5SHhrQnpEb3VPNGJZZmE5M3IvRHlGWGpvMnJGenRYSXhFdFBKL05say8xY3A5VXpJd0V1c1h3VndlRGJ0ODkxWG1VNFBablJxbEE3elVtVWhMMHVmdU5UeEVrMUQwazMybmxlQUtER012REs2WnNpb2h3V1o5M1ZhV2oiLCJtYWMiOiIwYmMwNTYyMTZjZjc2Y2IwNjFlMzAyMzY1MzI4NDczZmE3ZDlhNjllMjQ4NjE0YTAzNmQ3MmUzYTMwMDE0ZTA4IiwidGFnIjoiIn0%3D; expires=Mon, 08 Jul 2024 09:34:29 GMT; Max-Age=7200; path=/; samesite=lax; laravel_session=eyJpdiI6Iml6RThlekhhVTNtYmFWbTQ4T05Bc2c9PSIsInZhbHVlIjoieEYyVU5Ib0p2UGpoUXZmSy9KUFlQMlBPU3NmZTBqUzYydWdPTC9iZUV0bm4xZER6a3BBNFBSN1lZQWhPQW8vRGltMGVQUVZGUlVBTlhQa0pqcFRrUjJBNzkzUEE5dWxnS3YxbTE3ZlFxanZnbHB1Ylh0TlRtd1BpdFlNTFZUQlEiLCJtYWMiOiJkYmI0ZWQ1MTcwYWNlYzBkNWI0YzlkZGZkMDUwZTRiNWEzMDRmNTZmODc1YzhkM2JjYmZhY2JkMmEwOGFkM2I0IiwidGFnIjoiIn0%3D; expires=Mon, 08 Jul 2024 09:34:29 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
         description: null
         custom: []
     responseFields: []
@@ -65,7 +65,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: brielle.brakus@example.org
+        example: eriberto.kulas@example.org
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -74,14 +74,14 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: praesentium
+        example: consectetur
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      email: brielle.brakus@example.org
-      password: praesentium
+      email: eriberto.kulas@example.org
+      password: consectetur
     fileParameters: []
     responses: []
     responseFields: []
@@ -115,7 +115,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: omnis
+        example: a
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -124,7 +124,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: goodwin.dorcas@example.org
+        example: carole78@example.net
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -133,15 +133,15 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: repellat
+        example: est
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      name: omnis
-      email: goodwin.dorcas@example.org
-      password: repellat
+      name: a
+      email: carole78@example.net
+      password: est
     fileParameters: []
     responses: []
     responseFields: []
@@ -232,7 +232,7 @@ endpoints:
       authenticated: false
       custom: []
     headers:
-      Content-Type: multipart/form-data
+      Content-Type: application/json
       Accept: application/json
     urlParameters: []
     cleanUrlParameters: []
@@ -243,24 +243,23 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: impedit
+        example: quasi
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
       image:
         name: image
-        description: 'Must be an image.'
+        description: ''
         required: false
         example: null
-        type: file
+        type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      name: impedit
-    fileParameters:
-      image: null
+      name: quasi
+    fileParameters: []
     responses: []
     responseFields: []
     auth: []
@@ -331,7 +330,7 @@ endpoints:
       authenticated: false
       custom: []
     headers:
-      Content-Type: multipart/form-data
+      Content-Type: application/json
       Accept: application/json
     urlParameters:
       id:
@@ -352,24 +351,23 @@ endpoints:
         name: name
         description: ''
         required: false
-        example: vero
+        example: et
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
       image:
         name: image
-        description: 'Must be an image.'
+        description: ''
         required: false
         example: null
-        type: file
+        type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      name: vero
-    fileParameters:
-      image: null
+      name: et
+    fileParameters: []
     responses: []
     responseFields: []
     auth: []
@@ -405,6 +403,244 @@ endpoints:
         custom: []
     cleanUrlParameters:
       id: 2
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: pack
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: pack
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'The name of the pack'
+        required: true
+        example: natus
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      categories:
+        name: categories
+        description: 'The categories **id** of the pack'
+        required: true
+        example:
+          - dolor
+        type: 'string[]'
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      name: natus
+      categories:
+        - dolor
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'pack/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the pack.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'pack/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the pack.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 32 characters.'
+        required: false
+        example: ckyhrwvejs
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      categories:
+        name: categories
+        description: 'Must have at least 1 items. Must not have more than 5 items.'
+        required: false
+        example: null
+        type: object
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      name: ckyhrwvejs
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'pack/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the pack.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -486,7 +722,7 @@ endpoints:
                                   <p class="mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                                       HTTP request received.
 
-                                                                      Response successfully rendered in 2105ms.
+                                                                      Response successfully rendered in 2895ms.
                                                               </p>
                               </div>
                           </div>
@@ -497,7 +733,7 @@ endpoints:
         headers:
           content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
-          set-cookie: 'XSRF-TOKEN=eyJpdiI6IloyMk1XekJaUEoxVTcvaW9CdCtTNXc9PSIsInZhbHVlIjoiRE1HNnZhTVRZZHZjRE12OGFOTWdxT1JpK2NmYXRCSUx2bEFkcGR3T0t2ZjYxRCtKa2EvNUpqY3FOblI2RS9sbSs4K0NwUXpYbEV5ZUdid1VzNHB3dlVySTMzekV6Y0JubElrYURkVWJnL0RZTE8xUHpGSThheUdTejY5ZDJzTXciLCJtYWMiOiI5NmU2MmJiNjY0MDVmYjI4OGExZTQwYTJmNTNiMzY1MjgzMzllMTc2Y2EyMDI0NDcwMWUyNTI3YjM0MDJkMmQwIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 15:37:30 GMT; Max-Age=7200; path=/; samesite=lax; laravel_session=eyJpdiI6Ijh6RmVRNjNkTEEzT1hRWDZHemRNRGc9PSIsInZhbHVlIjoiT0dLbHRmUnZseG14c2k3YUdTNllHa0lwUnVKOVM0QytkMGowMnV2ajB1dEg0ZnB0OVVBZnVwMkM4bndRUENMRUl1MVFob0czQXNUV0pGWlZMUzJua1loQms5TjZDOCtheHRwcFEydGFHU2lrVEVOUFFoc0taRUR3ZXlhTGJRSlMiLCJtYWMiOiI1ODk2ZTg3NTI1ZTcyZjdhYmQ1ODIzNzJlM2YyMDNhOWY5YTFlZGYwYTJmYzg4Mjk4Njk0YjBjZmYwYTdlODkwIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 15:37:30 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+          set-cookie: 'XSRF-TOKEN=eyJpdiI6InBQSzZMaFFteUduSEp1M21xNFVTS1E9PSIsInZhbHVlIjoidHdDT3dEbXZyMkJJZmNqMWRaNk8zRUhJQy9mRmF5NytLczE1MXd2SmpzN2tVTS9sRHFJL3FrRFhmLzFJajJ4Q1hBWEw1K1krSTEyRU1jWVF0WThLclhYS2J0Vm5tNDMxU3AvanAvYzJPbkl6QzUzL3VVNVU3UXppSWl2M3MxUjMiLCJtYWMiOiJjYWUwOTFiMjUyMDRkMjhlMGQyMjVhZDQyYjhiNTcyYjNmYTFiM2EzZmI1YWJlN2RlYTJkYjYwODZhNDlmYzc1IiwidGFnIjoiIn0%3D; expires=Mon, 08 Jul 2024 09:34:31 GMT; Max-Age=7200; path=/; samesite=lax; laravel_session=eyJpdiI6Ik4wdTdGZzgvUUN3a1Y4MzNZbm1kdHc9PSIsInZhbHVlIjoicW9hZWxkR0xpY09FZ290eWVkTURNUWs5cjlyUys3dDd1dnp3aExDTnk5bzNxdVZ0cGppWFE1TWIwZytpK2hiU3pUNzdMa3ZyWUlad1IvTmZVaUZVUThxNVVNd1c2MWdxeU12MUo2dVdiazhzWnY3emplb1ZHMlB1Zjg0cXYwSzgiLCJtYWMiOiJiMDQxODUyZWU0YzIwZDg3M2Q2ZWFkMmJkOGRiZDBmNGVhZjY0ZmQ0ZjA5NTg0Y2E3Y2RhMTkzMzc5NjRiZmQyIiwidGFnIjoiIn0%3D; expires=Mon, 08 Jul 2024 09:34:31 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
         description: null
         custom: []
     responseFields: []

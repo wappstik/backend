@@ -38,11 +38,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: brielle.brakus@example.org
+                  example: eriberto.kulas@example.org
                 password:
                   type: string
                   description: ''
-                  example: praesentium
+                  example: consectetur
               required:
                 - email
                 - password
@@ -66,15 +66,15 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: omnis
+                  example: a
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: goodwin.dorcas@example.org
+                  example: carole78@example.net
                 password:
                   type: string
                   description: ''
-                  example: repellat
+                  example: est
               required:
                 - name
                 - email
@@ -123,18 +123,18 @@ paths:
       requestBody:
         required: true
         content:
-          multipart/form-data:
+          application/json:
             schema:
               type: object
               properties:
                 name:
                   type: string
                   description: ''
-                  example: impedit
+                  example: quasi
                 image:
                   type: string
-                  format: binary
-                  description: 'Must be an image.'
+                  description: ''
+                  example: null
               required:
                 - name
       security: []
@@ -171,18 +171,18 @@ paths:
       requestBody:
         required: false
         content:
-          multipart/form-data:
+          application/json:
             schema:
               type: object
               properties:
                 name:
                   type: string
                   description: ''
-                  example: vero
+                  example: et
                 image:
                   type: string
-                  format: binary
-                  description: 'Must be an image.'
+                  description: ''
+                  example: null
       security: []
     delete:
       summary: 'Remove the specified resource from storage.'
@@ -202,6 +202,123 @@ paths:
         required: true
         schema:
           type: integer
+  /pack:
+    get:
+      summary: 'Display a listing of the resource.'
+      operationId: displayAListingOfTheResource
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      operationId: storeANewlyCreatedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'The name of the pack'
+                  example: natus
+                categories:
+                  type: array
+                  description: 'The categories **id** of the pack'
+                  example:
+                    - dolor
+                  items:
+                    type: string
+              required:
+                - name
+                - categories
+      security: []
+  '/pack/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      operationId: displayTheSpecifiedResource
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      operationId: updateTheSpecifiedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 32 characters.'
+                  example: ckyhrwvejs
+                categories:
+                  type: object
+                  description: 'Must have at least 1 items. Must not have more than 5 items.'
+                  example: null
+                  properties: {  }
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      operationId: removeTheSpecifiedResourceFromStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the pack.'
+        example: 1
+        required: true
+        schema:
+          type: integer
   /up:
     get:
       summary: ''
@@ -215,7 +332,7 @@ paths:
             text/plain:
               schema:
                 type: string
-                example: "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n        <title>Laravel</title>\n\n        <!-- Fonts -->\n        <link rel=\"preconnect\" href=\"https://fonts.bunny.net\">\n        <link href=\"https://fonts.bunny.net/css?family=figtree:400,600&display=swap\" rel=\"stylesheet\" />\n\n        <!-- Styles -->\n        <script src=\"https://cdn.tailwindcss.com\"></script>\n\n        <script>\n            tailwind.config = {\n                theme: {\n                    extend: {\n                        fontFamily: {\n                            sans: ['Figtree', 'ui-sans-serif', 'system-ui', 'sans-serif', \"Apple Color Emoji\", \"Segoe UI Emoji\"],\n                        }\n                    }\n                }\n            }\n        </script>\n    </head>\n    <body class=\"antialiased\">\n        <div class=\"relative sm:flex sm:justify-center sm:items-center min-h-screen bg-gray-100 selection:bg-red-500 selection:text-white\">\n            <div class=\"w-full sm:w-3/4 xl:w-1/2 mx-auto p-6\">\n                <div class=\"px-6 py-4 bg-white from-gray-700/50 via-transparent rounded-lg shadow-2xl shadow-gray-500/20 flex items-center focus:outline focus:outline-2 focus:outline-red-500\">\n                    <div class=\"relative flex h-3 w-3\">\n                      <span class=\"animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75\"></span>\n                      <span class=\"relative inline-flex rounded-full h-3 w-3 bg-green-400\"></span>\n                    </div>\n\n                    <div class=\"ml-6\">\n                        <h2 class=\"text-xl font-semibold text-gray-900\">Application up</h2>\n\n                        <p class=\"mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed\">\n                            HTTP request received.\n\n                                                            Response successfully rendered in 2105ms.\n                                                    </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </body>\n</html>\n"
+                example: "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n        <title>Laravel</title>\n\n        <!-- Fonts -->\n        <link rel=\"preconnect\" href=\"https://fonts.bunny.net\">\n        <link href=\"https://fonts.bunny.net/css?family=figtree:400,600&display=swap\" rel=\"stylesheet\" />\n\n        <!-- Styles -->\n        <script src=\"https://cdn.tailwindcss.com\"></script>\n\n        <script>\n            tailwind.config = {\n                theme: {\n                    extend: {\n                        fontFamily: {\n                            sans: ['Figtree', 'ui-sans-serif', 'system-ui', 'sans-serif', \"Apple Color Emoji\", \"Segoe UI Emoji\"],\n                        }\n                    }\n                }\n            }\n        </script>\n    </head>\n    <body class=\"antialiased\">\n        <div class=\"relative sm:flex sm:justify-center sm:items-center min-h-screen bg-gray-100 selection:bg-red-500 selection:text-white\">\n            <div class=\"w-full sm:w-3/4 xl:w-1/2 mx-auto p-6\">\n                <div class=\"px-6 py-4 bg-white from-gray-700/50 via-transparent rounded-lg shadow-2xl shadow-gray-500/20 flex items-center focus:outline focus:outline-2 focus:outline-red-500\">\n                    <div class=\"relative flex h-3 w-3\">\n                      <span class=\"animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75\"></span>\n                      <span class=\"relative inline-flex rounded-full h-3 w-3 bg-green-400\"></span>\n                    </div>\n\n                    <div class=\"ml-6\">\n                        <h2 class=\"text-xl font-semibold text-gray-900\">Application up</h2>\n\n                        <p class=\"mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed\">\n                            HTTP request received.\n\n                                                            Response successfully rendered in 2895ms.\n                                                    </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </body>\n</html>\n"
       tags:
         - Endpoints
       security: []
