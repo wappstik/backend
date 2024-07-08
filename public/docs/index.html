@@ -98,6 +98,21 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-DELETEcategory--id-">
                                 <a href="#endpoints-DELETEcategory--id-">Remove the specified resource from storage.</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETpack">
+                                <a href="#endpoints-GETpack">Display a listing of the resource.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTpack">
+                                <a href="#endpoints-POSTpack">Store a newly created resource in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETpack--id-">
+                                <a href="#endpoints-GETpack--id-">Display the specified resource.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTpack--id-">
+                                <a href="#endpoints-PUTpack--id-">Update the specified resource in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEpack--id-">
+                                <a href="#endpoints-DELETEpack--id-">Remove the specified resource from storage.</a>
+                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETup">
                                 <a href="#endpoints-GETup">GET up</a>
                             </li>
@@ -112,7 +127,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: July 7, 2024</li>
+        <li>Last updated: July 8, 2024</li>
     </ul>
 </div>
 
@@ -179,7 +194,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 access-control-allow-origin: *
-set-cookie: XSRF-TOKEN=eyJpdiI6Imt0bEVyQnRyZGx6TEROSk14dWtyb2c9PSIsInZhbHVlIjoiMkx2VXFzcCtwM1NmK1cvNkxLOWY2WENJS3F0T2kwWnJqU2hzZVpZY2pDeEJ1a2tQUGpUQi90eWd1WlhwbUFnZzJLNVpzU2tpS01oMFovRndydmZjMnJrUG1iVkE0OUJQMzlUdkdCa2cwQVhDU3Y1UmtuYWl4OVlRa2xmYTk4TXMiLCJtYWMiOiJmODc3ZTFhMDQ4MzMxYzQ2YTM2NTQzNjI3YTI3OGU1ZTg0ODljYzhiOTZiOTE4ODA4YWE4MDkzZTUyNTQzMzU5IiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 15:37:29 GMT; Max-Age=7200; path=/; samesite=lax; laravel_session=eyJpdiI6ImhVWE4zNGFRdHNMci82RlV3VUQ4VXc9PSIsInZhbHVlIjoic0FHMkYxUjhPaWlVRHBuNk0yTTRjOGVkSkoyVlJDKzUzMmNyR3R5ZkQ0Q2NuUnRMYVFaYTZQK0E3bVRDay8wL3V5MGNLZDV1aldsNmQ3WEY4QmJCNEcvRVMrM254K0lhVzRSQmpNWUdkb1htK2VOL1NKb0pJNEU3blBRQ3AvaU4iLCJtYWMiOiJmNzQ1MjQzNGI5MTE3ZDRhNzY0NWU0OGUxMzkyM2IxMTgzMjc4ODM3NjMzNDAxMDViYzRmOWFlYTVkNzA0NzAxIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 15:37:29 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: XSRF-TOKEN=eyJpdiI6InhwVTVsbStYQ2p1aG40Q1RtWWpZdEE9PSIsInZhbHVlIjoidUsrLyt5SHhrQnpEb3VPNGJZZmE5M3IvRHlGWGpvMnJGenRYSXhFdFBKL05say8xY3A5VXpJd0V1c1h3VndlRGJ0ODkxWG1VNFBablJxbEE3elVtVWhMMHVmdU5UeEVrMUQwazMybmxlQUtER012REs2WnNpb2h3V1o5M1ZhV2oiLCJtYWMiOiIwYmMwNTYyMTZjZjc2Y2IwNjFlMzAyMzY1MzI4NDczZmE3ZDlhNjllMjQ4NjE0YTAzNmQ3MmUzYTMwMDE0ZTA4IiwidGFnIjoiIn0%3D; expires=Mon, 08 Jul 2024 09:34:29 GMT; Max-Age=7200; path=/; samesite=lax; laravel_session=eyJpdiI6Iml6RThlekhhVTNtYmFWbTQ4T05Bc2c9PSIsInZhbHVlIjoieEYyVU5Ib0p2UGpoUXZmSy9KUFlQMlBPU3NmZTBqUzYydWdPTC9iZUV0bm4xZER6a3BBNFBSN1lZQWhPQW8vRGltMGVQUVZGUlVBTlhQa0pqcFRrUjJBNzkzUEE5dWxnS3YxbTE3ZlFxanZnbHB1Ylh0TlRtd1BpdFlNTFZUQlEiLCJtYWMiOiJkYmI0ZWQ1MTcwYWNlYzBkNWI0YzlkZGZkMDUwZTRiNWEzMDRmNTZmODc1YzhkM2JjYmZhY2JkMmEwOGFkM2I0IiwidGFnIjoiIn0%3D; expires=Mon, 08 Jul 2024 09:34:29 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 <code>Empty response</code>
  </pre>
@@ -272,8 +287,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"brielle.brakus@example.org\",
-    \"password\": \"praesentium\"
+    \"email\": \"eriberto.kulas@example.org\",
+    \"password\": \"consectetur\"
 }"
 </code></pre></div>
 
@@ -289,8 +304,8 @@ const headers = {
 };
 
 let body = {
-    "email": "brielle.brakus@example.org",
-    "password": "praesentium"
+    "email": "eriberto.kulas@example.org",
+    "password": "consectetur"
 };
 
 fetch(url, {
@@ -379,10 +394,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTlogin"
-               value="brielle.brakus@example.org"
+               value="eriberto.kulas@example.org"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>brielle.brakus@example.org</code></p>
+<p>Must be a valid email address. Example: <code>eriberto.kulas@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -390,10 +405,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTlogin"
-               value="praesentium"
+               value="consectetur"
                data-component="body">
     <br>
-<p>Example: <code>praesentium</code></p>
+<p>Example: <code>consectetur</code></p>
         </div>
         </form>
 
@@ -414,9 +429,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"omnis\",
-    \"email\": \"goodwin.dorcas@example.org\",
-    \"password\": \"repellat\"
+    \"name\": \"a\",
+    \"email\": \"carole78@example.net\",
+    \"password\": \"est\"
 }"
 </code></pre></div>
 
@@ -432,9 +447,9 @@ const headers = {
 };
 
 let body = {
-    "name": "omnis",
-    "email": "goodwin.dorcas@example.org",
-    "password": "repellat"
+    "name": "a",
+    "email": "carole78@example.net",
+    "password": "est"
 };
 
 fetch(url, {
@@ -523,10 +538,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTregister"
-               value="omnis"
+               value="a"
                data-component="body">
     <br>
-<p>Example: <code>omnis</code></p>
+<p>Example: <code>a</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -534,10 +549,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTregister"
-               value="goodwin.dorcas@example.org"
+               value="carole78@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>goodwin.dorcas@example.org</code></p>
+<p>Must be a valid email address. Example: <code>carole78@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -545,10 +560,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTregister"
-               value="repellat"
+               value="est"
                data-component="body">
     <br>
-<p>Example: <code>repellat</code></p>
+<p>Example: <code>est</code></p>
         </div>
         </form>
 
@@ -797,10 +812,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/category" \
-    --header "Content-Type: multipart/form-data" \
+    --header "Content-Type: application/json" \
     --header "Accept: application/json" \
-    --form "name=impedit"\
-    --form "image=@/tmp/phppCVqOJ" </code></pre></div>
+    --data "{
+    \"name\": \"quasi\"
+}"
+</code></pre></div>
 
 
 <div class="javascript-example">
@@ -809,18 +826,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Content-Type": "multipart/form-data",
+    "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
-const body = new FormData();
-body.append('name', 'impedit');
-body.append('image', document.querySelector('input[name="image"]').files[0]);
+let body = {
+    "name": "quasi"
+};
 
 fetch(url, {
     method: "POST",
     headers,
-    body,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
@@ -845,7 +862,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <form id="form-POSTcategory" data-method="POST"
       data-path="category"
       data-authed="0"
-      data-hasfiles="1"
+      data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
       onsubmit="event.preventDefault(); executeTryOut('POSTcategory', this);">
@@ -880,10 +897,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Content-Type"                data-endpoint="POSTcategory"
-               value="multipart/form-data"
+               value="application/json"
                data-component="header">
     <br>
-<p>Example: <code>multipart/form-data</code></p>
+<p>Example: <code>application/json</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
@@ -903,21 +920,21 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTcategory"
-               value="impedit"
+               value="quasi"
                data-component="body">
     <br>
-<p>Example: <code>impedit</code></p>
+<p>Example: <code>quasi</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
-<small>file</small>&nbsp;
+<small>string</small>&nbsp;
 <i>optional</i> &nbsp;
-                <input type="file" style="display: none"
+                <input type="text" style="display: none"
                               name="image"                data-endpoint="POSTcategory"
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>/tmp/phppCVqOJ</code></p>
+
         </div>
         </form>
 
@@ -1070,10 +1087,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost/category/2" \
-    --header "Content-Type: multipart/form-data" \
+    --header "Content-Type: application/json" \
     --header "Accept: application/json" \
-    --form "name=vero"\
-    --form "image=@/tmp/phpeN2Ha2" </code></pre></div>
+    --data "{
+    \"name\": \"et\"
+}"
+</code></pre></div>
 
 
 <div class="javascript-example">
@@ -1082,18 +1101,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Content-Type": "multipart/form-data",
+    "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
-const body = new FormData();
-body.append('name', 'vero');
-body.append('image', document.querySelector('input[name="image"]').files[0]);
+let body = {
+    "name": "et"
+};
 
 fetch(url, {
     method: "PUT",
     headers,
-    body,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
@@ -1118,7 +1137,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <form id="form-PUTcategory--id-" data-method="PUT"
       data-path="category/{id}"
       data-authed="0"
-      data-hasfiles="1"
+      data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
       onsubmit="event.preventDefault(); executeTryOut('PUTcategory--id-', this);">
@@ -1157,10 +1176,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Content-Type"                data-endpoint="PUTcategory--id-"
-               value="multipart/form-data"
+               value="application/json"
                data-component="header">
     <br>
-<p>Example: <code>multipart/form-data</code></p>
+<p>Example: <code>application/json</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
@@ -1192,21 +1211,21 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="PUTcategory--id-"
-               value="vero"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>vero</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
-<small>file</small>&nbsp;
+<small>string</small>&nbsp;
 <i>optional</i> &nbsp;
-                <input type="file" style="display: none"
+                <input type="text" style="display: none"
                               name="image"                data-endpoint="PUTcategory--id-"
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>/tmp/phpeN2Ha2</code></p>
+
         </div>
         </form>
 
@@ -1330,6 +1349,688 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
+                    <h2 id="endpoints-GETpack">Display a listing of the resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETpack">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/pack" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/pack"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETpack">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETpack" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETpack"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETpack"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETpack" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETpack">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETpack" data-method="GET"
+      data-path="pack"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETpack', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETpack"
+                    onclick="tryItOut('GETpack');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETpack"
+                    onclick="cancelTryOut('GETpack');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETpack"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>pack</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETpack"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETpack"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-POSTpack">Store a newly created resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTpack">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/pack" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"natus\",
+    \"categories\": [
+        \"dolor\"
+    ]
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/pack"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "natus",
+    "categories": [
+        "dolor"
+    ]
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTpack">
+</span>
+<span id="execution-results-POSTpack" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTpack"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTpack"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTpack" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTpack">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTpack" data-method="POST"
+      data-path="pack"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTpack', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTpack"
+                    onclick="tryItOut('POSTpack');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTpack"
+                    onclick="cancelTryOut('POSTpack');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTpack"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>pack</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTpack"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTpack"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="name"                data-endpoint="POSTpack"
+               value="natus"
+               data-component="body">
+    <br>
+<p>The name of the pack Example: <code>natus</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>categories</code></b>&nbsp;&nbsp;
+<small>string[]</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="categories[0]"                data-endpoint="POSTpack"
+               data-component="body">
+        <input type="text" style="display: none"
+               name="categories[1]"                data-endpoint="POSTpack"
+               data-component="body">
+    <br>
+<p>The categories <strong>id</strong> of the pack</p>
+        </div>
+        </form>
+
+                    <h2 id="endpoints-GETpack--id-">Display the specified resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETpack--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/pack/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/pack/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETpack--id-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETpack--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETpack--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETpack--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETpack--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETpack--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETpack--id-" data-method="GET"
+      data-path="pack/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETpack--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETpack--id-"
+                    onclick="tryItOut('GETpack--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETpack--id-"
+                    onclick="cancelTryOut('GETpack--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETpack--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>pack/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETpack--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETpack--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="GETpack--id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the pack. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-PUTpack--id-">Update the specified resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTpack--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost/pack/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"ckyhrwvejs\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/pack/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "ckyhrwvejs"
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTpack--id-">
+</span>
+<span id="execution-results-PUTpack--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTpack--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTpack--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PUTpack--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTpack--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PUTpack--id-" data-method="PUT"
+      data-path="pack/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTpack--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTpack--id-"
+                    onclick="tryItOut('PUTpack--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTpack--id-"
+                    onclick="cancelTryOut('PUTpack--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTpack--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>pack/{id}</code></b>
+        </p>
+            <p>
+            <small class="badge badge-purple">PATCH</small>
+            <b><code>pack/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PUTpack--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PUTpack--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="PUTpack--id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the pack. Example: <code>1</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="name"                data-endpoint="PUTpack--id-"
+               value="ckyhrwvejs"
+               data-component="body">
+    <br>
+<p>Must not be greater than 32 characters. Example: <code>ckyhrwvejs</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>categories</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="categories"                data-endpoint="PUTpack--id-"
+               value=""
+               data-component="body">
+    <br>
+<p>Must have at least 1 items. Must not have more than 5 items.</p>
+        </div>
+        </form>
+
+                    <h2 id="endpoints-DELETEpack--id-">Remove the specified resource from storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEpack--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost/pack/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/pack/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEpack--id-">
+</span>
+<span id="execution-results-DELETEpack--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEpack--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEpack--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEpack--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEpack--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEpack--id-" data-method="DELETE"
+      data-path="pack/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEpack--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEpack--id-"
+                    onclick="tryItOut('DELETEpack--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEpack--id-"
+                    onclick="cancelTryOut('DELETEpack--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEpack--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>pack/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEpack--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEpack--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="DELETEpack--id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the pack. Example: <code>1</code></p>
+            </div>
+                    </form>
+
                     <h2 id="endpoints-GETup">GET up</h2>
 
 <p>
@@ -1375,7 +2076,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
-set-cookie: XSRF-TOKEN=eyJpdiI6IloyMk1XekJaUEoxVTcvaW9CdCtTNXc9PSIsInZhbHVlIjoiRE1HNnZhTVRZZHZjRE12OGFOTWdxT1JpK2NmYXRCSUx2bEFkcGR3T0t2ZjYxRCtKa2EvNUpqY3FOblI2RS9sbSs4K0NwUXpYbEV5ZUdid1VzNHB3dlVySTMzekV6Y0JubElrYURkVWJnL0RZTE8xUHpGSThheUdTejY5ZDJzTXciLCJtYWMiOiI5NmU2MmJiNjY0MDVmYjI4OGExZTQwYTJmNTNiMzY1MjgzMzllMTc2Y2EyMDI0NDcwMWUyNTI3YjM0MDJkMmQwIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 15:37:30 GMT; Max-Age=7200; path=/; samesite=lax; laravel_session=eyJpdiI6Ijh6RmVRNjNkTEEzT1hRWDZHemRNRGc9PSIsInZhbHVlIjoiT0dLbHRmUnZseG14c2k3YUdTNllHa0lwUnVKOVM0QytkMGowMnV2ajB1dEg0ZnB0OVVBZnVwMkM4bndRUENMRUl1MVFob0czQXNUV0pGWlZMUzJua1loQms5TjZDOCtheHRwcFEydGFHU2lrVEVOUFFoc0taRUR3ZXlhTGJRSlMiLCJtYWMiOiI1ODk2ZTg3NTI1ZTcyZjdhYmQ1ODIzNzJlM2YyMDNhOWY5YTFlZGYwYTJmYzg4Mjk4Njk0YjBjZmYwYTdlODkwIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 15:37:30 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: XSRF-TOKEN=eyJpdiI6InBQSzZMaFFteUduSEp1M21xNFVTS1E9PSIsInZhbHVlIjoidHdDT3dEbXZyMkJJZmNqMWRaNk8zRUhJQy9mRmF5NytLczE1MXd2SmpzN2tVTS9sRHFJL3FrRFhmLzFJajJ4Q1hBWEw1K1krSTEyRU1jWVF0WThLclhYS2J0Vm5tNDMxU3AvanAvYzJPbkl6QzUzL3VVNVU3UXppSWl2M3MxUjMiLCJtYWMiOiJjYWUwOTFiMjUyMDRkMjhlMGQyMjVhZDQyYjhiNTcyYjNmYTFiM2EzZmI1YWJlN2RlYTJkYjYwODZhNDlmYzc1IiwidGFnIjoiIn0%3D; expires=Mon, 08 Jul 2024 09:34:31 GMT; Max-Age=7200; path=/; samesite=lax; laravel_session=eyJpdiI6Ik4wdTdGZzgvUUN3a1Y4MzNZbm1kdHc9PSIsInZhbHVlIjoicW9hZWxkR0xpY09FZ290eWVkTURNUWs5cjlyUys3dDd1dnp3aExDTnk5bzNxdVZ0cGppWFE1TWIwZytpK2hiU3pUNzdMa3ZyWUlad1IvTmZVaUZVUThxNVVNd1c2MWdxeU12MUo2dVdiazhzWnY3emplb1ZHMlB1Zjg0cXYwSzgiLCJtYWMiOiJiMDQxODUyZWU0YzIwZDg3M2Q2ZWFkMmJkOGRiZDBmNGVhZjY0ZmQ0ZjA5NTg0Y2E3Y2RhMTkzMzc5NjRiZmQyIiwidGFnIjoiIn0%3D; expires=Mon, 08 Jul 2024 09:34:31 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">&lt;!DOCTYPE html&gt;
@@ -1420,7 +2121,7 @@ set-cookie: XSRF-TOKEN=eyJpdiI6IloyMk1XekJaUEoxVTcvaW9CdCtTNXc9PSIsInZhbHVlIjoiR
                         &lt;p class=&quot;mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed&quot;&gt;
                             HTTP request received.
 
-                                                            Response successfully rendered in 2105ms.
+                                                            Response successfully rendered in 2895ms.
                                                     &lt;/p&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;

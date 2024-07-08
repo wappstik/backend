@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "e23e98cb-0f7b-4c16-9f73-e87df12ac31f",
+        "_postman_id": "c5e999f6-572f-4e8d-b0d9-996ef446321d",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -58,7 +58,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "XSRF-TOKEN=eyJpdiI6Imt0bEVyQnRyZGx6TEROSk14dWtyb2c9PSIsInZhbHVlIjoiMkx2VXFzcCtwM1NmK1cvNkxLOWY2WENJS3F0T2kwWnJqU2hzZVpZY2pDeEJ1a2tQUGpUQi90eWd1WlhwbUFnZzJLNVpzU2tpS01oMFovRndydmZjMnJrUG1iVkE0OUJQMzlUdkdCa2cwQVhDU3Y1UmtuYWl4OVlRa2xmYTk4TXMiLCJtYWMiOiJmODc3ZTFhMDQ4MzMxYzQ2YTM2NTQzNjI3YTI3OGU1ZTg0ODljYzhiOTZiOTE4ODA4YWE4MDkzZTUyNTQzMzU5IiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 15:37:29 GMT; Max-Age=7200; path=\/; samesite=lax; laravel_session=eyJpdiI6ImhVWE4zNGFRdHNMci82RlV3VUQ4VXc9PSIsInZhbHVlIjoic0FHMkYxUjhPaWlVRHBuNk0yTTRjOGVkSkoyVlJDKzUzMmNyR3R5ZkQ0Q2NuUnRMYVFaYTZQK0E3bVRDay8wL3V5MGNLZDV1aldsNmQ3WEY4QmJCNEcvRVMrM254K0lhVzRSQmpNWUdkb1htK2VOL1NKb0pJNEU3blBRQ3AvaU4iLCJtYWMiOiJmNzQ1MjQzNGI5MTE3ZDRhNzY0NWU0OGUxMzkyM2IxMTgzMjc4ODM3NjMzNDAxMDViYzRmOWFlYTVkNzA0NzAxIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 15:37:29 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                    "value": "XSRF-TOKEN=eyJpdiI6InhwVTVsbStYQ2p1aG40Q1RtWWpZdEE9PSIsInZhbHVlIjoidUsrLyt5SHhrQnpEb3VPNGJZZmE5M3IvRHlGWGpvMnJGenRYSXhFdFBKL05say8xY3A5VXpJd0V1c1h3VndlRGJ0ODkxWG1VNFBablJxbEE3elVtVWhMMHVmdU5UeEVrMUQwazMybmxlQUtER012REs2WnNpb2h3V1o5M1ZhV2oiLCJtYWMiOiIwYmMwNTYyMTZjZjc2Y2IwNjFlMzAyMzY1MzI4NDczZmE3ZDlhNjllMjQ4NjE0YTAzNmQ3MmUzYTMwMDE0ZTA4IiwidGFnIjoiIn0%3D; expires=Mon, 08 Jul 2024 09:34:29 GMT; Max-Age=7200; path=\/; samesite=lax; laravel_session=eyJpdiI6Iml6RThlekhhVTNtYmFWbTQ4T05Bc2c9PSIsInZhbHVlIjoieEYyVU5Ib0p2UGpoUXZmSy9KUFlQMlBPU3NmZTBqUzYydWdPTC9iZUV0bm4xZER6a3BBNFBSN1lZQWhPQW8vRGltMGVQUVZGUlVBTlhQa0pqcFRrUjJBNzkzUEE5dWxnS3YxbTE3ZlFxanZnbHB1Ylh0TlRtd1BpdFlNTFZUQlEiLCJtYWMiOiJkYmI0ZWQ1MTcwYWNlYzBkNWI0YzlkZGZkMDUwZTRiNWEzMDRmNTZmODc1YzhkM2JjYmZhY2JkMmEwOGFkM2I0IiwidGFnIjoiIn0%3D; expires=Mon, 08 Jul 2024 09:34:29 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
                                 }
                             ],
                             "code": 204,
@@ -89,7 +89,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"brielle.brakus@example.org\",\"password\":\"praesentium\"}"
+                            "raw": "{\"email\":\"eriberto.kulas@example.org\",\"password\":\"consectetur\"}"
                         },
                         "description": "",
                         "auth": {
@@ -120,7 +120,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"omnis\",\"email\":\"goodwin.dorcas@example.org\",\"password\":\"repellat\"}"
+                            "raw": "{\"name\":\"a\",\"email\":\"carole78@example.net\",\"password\":\"est\"}"
                         },
                         "description": "",
                         "auth": {
@@ -214,7 +214,7 @@
                         "header": [
                             {
                                 "key": "Content-Type",
-                                "value": "multipart\/form-data"
+                                "value": "application\/json"
                             },
                             {
                                 "key": "Accept",
@@ -222,20 +222,8 @@
                             }
                         ],
                         "body": {
-                            "mode": "formdata",
-                            "formdata": [
-                                {
-                                    "key": "name",
-                                    "value": "impedit",
-                                    "type": "text",
-                                    "description": ""
-                                },
-                                {
-                                    "key": "image",
-                                    "src": [],
-                                    "type": "file"
-                                }
-                            ]
+                            "mode": "raw",
+                            "raw": "{\"name\":\"quasi\"}"
                         },
                         "description": "",
                         "auth": {
@@ -313,11 +301,11 @@
                                 }
                             ]
                         },
-                        "method": "POST",
+                        "method": "PUT",
                         "header": [
                             {
                                 "key": "Content-Type",
-                                "value": "multipart\/form-data"
+                                "value": "application\/json"
                             },
                             {
                                 "key": "Accept",
@@ -325,25 +313,8 @@
                             }
                         ],
                         "body": {
-                            "mode": "formdata",
-                            "formdata": [
-                                {
-                                    "key": "name",
-                                    "value": "vero",
-                                    "type": "text",
-                                    "description": ""
-                                },
-                                {
-                                    "key": "image",
-                                    "src": [],
-                                    "type": "file"
-                                },
-                                {
-                                    "key": "_method",
-                                    "value": "PUT",
-                                    "type": "text"
-                                }
-                            ]
+                            "mode": "raw",
+                            "raw": "{\"name\":\"et\"}"
                         },
                         "description": "",
                         "auth": {
@@ -366,6 +337,208 @@
                                     "key": "id",
                                     "value": "2",
                                     "description": "The ID of the category."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "pack",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/pack"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "pack",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/pack"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"natus\",\"categories\":[\"dolor\"]}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "pack\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/pack\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the pack."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "pack\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/pack\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the pack."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"ckyhrwvejs\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "pack\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/pack\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the pack."
                                 }
                             ]
                         },
@@ -427,11 +600,11 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "XSRF-TOKEN=eyJpdiI6IloyMk1XekJaUEoxVTcvaW9CdCtTNXc9PSIsInZhbHVlIjoiRE1HNnZhTVRZZHZjRE12OGFOTWdxT1JpK2NmYXRCSUx2bEFkcGR3T0t2ZjYxRCtKa2EvNUpqY3FOblI2RS9sbSs4K0NwUXpYbEV5ZUdid1VzNHB3dlVySTMzekV6Y0JubElrYURkVWJnL0RZTE8xUHpGSThheUdTejY5ZDJzTXciLCJtYWMiOiI5NmU2MmJiNjY0MDVmYjI4OGExZTQwYTJmNTNiMzY1MjgzMzllMTc2Y2EyMDI0NDcwMWUyNTI3YjM0MDJkMmQwIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 15:37:30 GMT; Max-Age=7200; path=\/; samesite=lax; laravel_session=eyJpdiI6Ijh6RmVRNjNkTEEzT1hRWDZHemRNRGc9PSIsInZhbHVlIjoiT0dLbHRmUnZseG14c2k3YUdTNllHa0lwUnVKOVM0QytkMGowMnV2ajB1dEg0ZnB0OVVBZnVwMkM4bndRUENMRUl1MVFob0czQXNUV0pGWlZMUzJua1loQms5TjZDOCtheHRwcFEydGFHU2lrVEVOUFFoc0taRUR3ZXlhTGJRSlMiLCJtYWMiOiI1ODk2ZTg3NTI1ZTcyZjdhYmQ1ODIzNzJlM2YyMDNhOWY5YTFlZGYwYTJmYzg4Mjk4Njk0YjBjZmYwYTdlODkwIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jul 2024 15:37:30 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                    "value": "XSRF-TOKEN=eyJpdiI6InBQSzZMaFFteUduSEp1M21xNFVTS1E9PSIsInZhbHVlIjoidHdDT3dEbXZyMkJJZmNqMWRaNk8zRUhJQy9mRmF5NytLczE1MXd2SmpzN2tVTS9sRHFJL3FrRFhmLzFJajJ4Q1hBWEw1K1krSTEyRU1jWVF0WThLclhYS2J0Vm5tNDMxU3AvanAvYzJPbkl6QzUzL3VVNVU3UXppSWl2M3MxUjMiLCJtYWMiOiJjYWUwOTFiMjUyMDRkMjhlMGQyMjVhZDQyYjhiNTcyYjNmYTFiM2EzZmI1YWJlN2RlYTJkYjYwODZhNDlmYzc1IiwidGFnIjoiIn0%3D; expires=Mon, 08 Jul 2024 09:34:31 GMT; Max-Age=7200; path=\/; samesite=lax; laravel_session=eyJpdiI6Ik4wdTdGZzgvUUN3a1Y4MzNZbm1kdHc9PSIsInZhbHVlIjoicW9hZWxkR0xpY09FZ290eWVkTURNUWs5cjlyUys3dDd1dnp3aExDTnk5bzNxdVZ0cGppWFE1TWIwZytpK2hiU3pUNzdMa3ZyWUlad1IvTmZVaUZVUThxNVVNd1c2MWdxeU12MUo2dVdiazhzWnY3emplb1ZHMlB1Zjg0cXYwSzgiLCJtYWMiOiJiMDQxODUyZWU0YzIwZDg3M2Q2ZWFkMmJkOGRiZDBmNGVhZjY0ZmQ0ZjA5NTg0Y2E3Y2RhMTkzMzc5NjRiZmQyIiwidGFnIjoiIn0%3D; expires=Mon, 08 Jul 2024 09:34:31 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
                                 }
                             ],
                             "code": 200,
-                            "body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n        <title>Laravel<\/title>\n\n        <!-- Fonts -->\n        <link rel=\"preconnect\" href=\"https:\/\/fonts.bunny.net\">\n        <link href=\"https:\/\/fonts.bunny.net\/css?family=figtree:400,600&display=swap\" rel=\"stylesheet\" \/>\n\n        <!-- Styles -->\n        <script src=\"https:\/\/cdn.tailwindcss.com\"><\/script>\n\n        <script>\n            tailwind.config = {\n                theme: {\n                    extend: {\n                        fontFamily: {\n                            sans: ['Figtree', 'ui-sans-serif', 'system-ui', 'sans-serif', \"Apple Color Emoji\", \"Segoe UI Emoji\"],\n                        }\n                    }\n                }\n            }\n        <\/script>\n    <\/head>\n    <body class=\"antialiased\">\n        <div class=\"relative sm:flex sm:justify-center sm:items-center min-h-screen bg-gray-100 selection:bg-red-500 selection:text-white\">\n            <div class=\"w-full sm:w-3\/4 xl:w-1\/2 mx-auto p-6\">\n                <div class=\"px-6 py-4 bg-white from-gray-700\/50 via-transparent rounded-lg shadow-2xl shadow-gray-500\/20 flex items-center focus:outline focus:outline-2 focus:outline-red-500\">\n                    <div class=\"relative flex h-3 w-3\">\n                      <span class=\"animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75\"><\/span>\n                      <span class=\"relative inline-flex rounded-full h-3 w-3 bg-green-400\"><\/span>\n                    <\/div>\n\n                    <div class=\"ml-6\">\n                        <h2 class=\"text-xl font-semibold text-gray-900\">Application up<\/h2>\n\n                        <p class=\"mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed\">\n                            HTTP request received.\n\n                                                            Response successfully rendered in 2105ms.\n                                                    <\/p>\n                    <\/div>\n                <\/div>\n            <\/div>\n        <\/div>\n    <\/body>\n<\/html>\n",
+                            "body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n        <title>Laravel<\/title>\n\n        <!-- Fonts -->\n        <link rel=\"preconnect\" href=\"https:\/\/fonts.bunny.net\">\n        <link href=\"https:\/\/fonts.bunny.net\/css?family=figtree:400,600&display=swap\" rel=\"stylesheet\" \/>\n\n        <!-- Styles -->\n        <script src=\"https:\/\/cdn.tailwindcss.com\"><\/script>\n\n        <script>\n            tailwind.config = {\n                theme: {\n                    extend: {\n                        fontFamily: {\n                            sans: ['Figtree', 'ui-sans-serif', 'system-ui', 'sans-serif', \"Apple Color Emoji\", \"Segoe UI Emoji\"],\n                        }\n                    }\n                }\n            }\n        <\/script>\n    <\/head>\n    <body class=\"antialiased\">\n        <div class=\"relative sm:flex sm:justify-center sm:items-center min-h-screen bg-gray-100 selection:bg-red-500 selection:text-white\">\n            <div class=\"w-full sm:w-3\/4 xl:w-1\/2 mx-auto p-6\">\n                <div class=\"px-6 py-4 bg-white from-gray-700\/50 via-transparent rounded-lg shadow-2xl shadow-gray-500\/20 flex items-center focus:outline focus:outline-2 focus:outline-red-500\">\n                    <div class=\"relative flex h-3 w-3\">\n                      <span class=\"animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75\"><\/span>\n                      <span class=\"relative inline-flex rounded-full h-3 w-3 bg-green-400\"><\/span>\n                    <\/div>\n\n                    <div class=\"ml-6\">\n                        <h2 class=\"text-xl font-semibold text-gray-900\">Application up<\/h2>\n\n                        <p class=\"mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed\">\n                            HTTP request received.\n\n                                                            Response successfully rendered in 2895ms.\n                                                    <\/p>\n                    <\/div>\n                <\/div>\n            <\/div>\n        <\/div>\n    <\/body>\n<\/html>\n",
                             "name": ""
                         }
                     ]
