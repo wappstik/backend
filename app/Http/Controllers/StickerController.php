@@ -2,64 +2,44 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Pack;
 use App\Models\Sticker;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rules\File;
 
 class StickerController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Pack $pack)
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
+        return $pack->stickers();
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request, Pack $pack)
     {
-        //
+       
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Sticker $sticker)
+    public function show(Pack $pack, Sticker $sticker)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Sticker $sticker)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Sticker $sticker)
-    {
-        //
+        return $sticker;
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Sticker $sticker)
+    public function destroy(Pack $pack, Sticker $sticker)
     {
-        //
+        $sticker->delete();
+        return response()->json(['message' => 'Sticker deleted successfully.']);
     }
 }
