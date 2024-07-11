@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules\File;
 
+use function PHPUnit\Framework\stringStartsWith;
+
 class StickerController extends Controller
 {
     /**
@@ -56,6 +58,15 @@ class StickerController extends Controller
     public function show(Request $request, Pack $pack, Sticker $sticker)
     {
         if ($request->has('download')) {
+            if (stringStartsWith($sticker->image, 'http')) {
+                $stickerExtension = explode('.', $sticker->image);
+                $stickerExtension = $stickerExtension[1];
+                $filename = 'sticker' . '.' . $stickerExtension;
+                $tempImage = tempnam(sys_get_temp_dir(), $filename);
+                copy($sticker->image, $tempImage);
+
+                return response()->download($tempImage, $filename);
+            }
             return response()->download(Storage::path($sticker->image));
         }
 
